@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-display), "Bebas Neue", sans-serif;
+  --font-body: var(--font-body), "Inter", sans-serif;
+
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-marquee-left: marquee-left 25s linear infinite;
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Global body */
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Prevent horizontal overflow */
+* {
+  box-sizing: border-box;
+}
+
+/* Custom utility classes for fonts */
+.font-display {
+  font-family: var(--font-display), "Bebas Neue", sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), "Inter", sans-serif;
+}

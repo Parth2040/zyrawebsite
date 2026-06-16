@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { cubicBezier, motion, useScroll, useTransform } from "framer-motion";
 
 const letterVariants = {
   hidden: { opacity: 0, y: 80 },
@@ -11,7 +11,7 @@ const letterVariants = {
     transition: {
       delay: i * 0.08,
       duration: 0.9,
-      ease: [0.16, 1, 0.3, 1],
+      ease: cubicBezier(0.16, 1, 0.3, 1),
     },
   }),
 };

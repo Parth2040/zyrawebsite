@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Zyra Sneakers
 
 A modern, interactive sneaker showcase website built with Next.js, React Three Fiber, and Tailwind CSS. Features stunning 3D visualizations, smooth animations, and a responsive design to showcase premium footwear.
@@ -136,3 +137,6 @@ This project is private and proprietary.
 ## Author
 
 Created with ❤️
+=======
+# zyrawebsite
+>>>>>>> f23ba2171e290c48dcf9c160ab93175de6b72f0e
